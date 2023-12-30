@@ -42,7 +42,34 @@ Apache .htaccess Tester
   )
 ```
 
-__output:__ [log file](./tests/01-README/test.log)
+__Output:__ [log file](./tests/01-README/test.log)
+
+- - - -
+
+#### Browser Build
+
+__CDN links:__
+
+* [unpkg.com](https://unpkg.com/@warren-bank/htaccess-tester@latest/browser-build/dist/es5/htaccess-tester.js)
+* [jsdelivr.net](https://cdn.jsdelivr.net/npm/@warren-bank/htaccess-tester@latest/browser-build/dist/es5/htaccess-tester.js)
+
+__Usage:__
+
+```html
+  <html>
+    <head>
+      <script src="./browser-build/dist/es5/htaccess-tester.js"></script>
+      <script>
+        // abbreviated.. same data structure as the previous example:
+        const test_data = {url, htaccess, variables}
+
+        const test_results = window.htaccess_tester(test_data)
+      </script>
+    </head>
+  </html>
+```
+
+__Example:__ [HTML file](./browser-build/tests/01-README/test.html) &rarr; [raw.githack.com](https://raw.githack.com/warren-bank/js-htaccess-tester/master/browser-build/tests/01-README/test.html)
 
 - - - -
 
@@ -68,7 +95,7 @@ __output:__ [log file](./tests/01-README/test.log)
   - [api](https://htaccess.madewithlove.com/api)
   - notes:
     * this is a great utility, but all of its work is performed by a closed-source api backend
-    * I designed my [SPA front-end](https://warren-bank.github.io/single-page-apps/htaccess-tester/index.html) user interface to look similar, and all of its work is performed by client-side JS
+    * I designed my [SPA front-end](https://warren-bank.github.io/single-page-apps/htaccess-tester/index.html) user interface to look similar,<br>and all of its work is performed by client-side JS
 
 #### Legal:
 
