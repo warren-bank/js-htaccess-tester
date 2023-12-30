@@ -1,0 +1,122 @@
+{
+  "success": true,
+  "result": {
+    "url": "https://github.com/warren-bank/Android-WebMonkey/raw/v04.02.01/android-studio-project/WebMonkey/src/main/res/drawable/launcher.png",
+    "status_code": 301,
+    "mime_type": "",
+    "skip_count": 0,
+    "matches": [
+      "repo/icons/com.github.warren_bank.webmonkey.png"
+    ],
+    "file_path": null
+  },
+  "log": [
+    {
+      "text": "RewriteRule \"^(/?(?:repo|archive))/([^/]+)/[^/]+/icon.*\\.png$\" \"$1/icons/$2.png\" [B,PT]",
+      "is_condition": false,
+      "errors": [],
+      "is_valid": true,
+      "is_match": true,
+      "all_conditions_match": true,
+      "result": {
+        "url": "https://warren-bank.orgfree.com/repo/icons/com%2Egithub%2Ewarren%5Fbank%2Ewebmonkey.png",
+        "status_code": null,
+        "mime_type": "",
+        "skip_count": 0,
+        "matches": [
+          "repo/com.github.warren_bank.webmonkey/fr/icon.png",
+          "repo",
+          "com.github.warren_bank.webmonkey"
+        ],
+        "file_path": "/repo/icons/com%2Egithub%2Ewarren%5Fbank%2Ewebmonkey.png"
+      },
+      "is_redirect": null,
+      "is_passthrough": true,
+      "is_last": false,
+      "passthrough": [
+        {
+          "text": "RewriteRule \"^(/?(?:repo|archive))/([^/]+)/[^/]+/icon.*\\.png$\" \"$1/icons/$2.png\" [B,PT]",
+          "is_condition": false,
+          "errors": [
+            "RewriteRule Substitution variable not resolved: $1",
+            "RewriteRule Substitution variable not resolved: $2"
+          ],
+          "is_valid": false,
+          "is_match": false
+        },
+        {
+          "text": "RewriteRule \"^/?repo/icons(?:-\\d+)?/com\\.github\\.warren_bank\\.exoplayer_airplay_receiver(?:\\.\\d+)?\\.png$\"                                             \"https://github.com/warren-bank/Android-ExoPlayer-AirPlay-Receiver/raw/v3.4.7/android-studio-project/ExoPlayer-AirPlay-Receiver/src/main/res/drawable/launcher.png\" [L,R=301]",
+          "is_condition": false,
+          "errors": [],
+          "is_valid": true,
+          "is_match": false,
+          "all_conditions_match": true,
+          "result": {
+            "url": "https://github.com/warren-bank/Android-ExoPlayer-AirPlay-Receiver/raw/v3.4.7/android-studio-project/ExoPlayer-AirPlay-Receiver/src/main/res/drawable/launcher.png",
+            "status_code": 301,
+            "mime_type": "",
+            "skip_count": 0
+          },
+          "is_redirect": true,
+          "is_passthrough": false,
+          "is_last": true
+        },
+        {
+          "text": "RewriteRule \"^/?repo/icons(?:-\\d+)?/com\\.github\\.warren_bank\\.mock_location(?:\\.\\d+)?\\.png$\"                                                          \"https://github.com/warren-bank/Android-Mock-Location/raw/service/v02.03.01/android-studio-project/Mock-my-GPS/src/main/res/drawable/launcher.png\" [L,R=301]",
+          "is_condition": false,
+          "errors": [],
+          "is_valid": true,
+          "is_match": false,
+          "all_conditions_match": true,
+          "result": {
+            "url": "https://github.com/warren-bank/Android-Mock-Location/raw/service/v02.03.01/android-studio-project/Mock-my-GPS/src/main/res/drawable/launcher.png",
+            "status_code": 301,
+            "mime_type": "",
+            "skip_count": 0
+          },
+          "is_redirect": true,
+          "is_passthrough": false,
+          "is_last": true
+        },
+        {
+          "text": "RewriteRule \"^/?repo/icons(?:-\\d+)?/com\\.github\\.warren_bank\\.mock_location\\.service\\.microg_nlp_backend(?:\\.\\d+)?\\.png$\"                             \"https://github.com/warren-bank/Android-Mock-Location/raw/service/v02.03.01/android-studio-project/Mock-my-GPS-UnifiedNlp-Backend/src/main/res/drawable/launcher.png\" [L,R=301]",
+          "is_condition": false,
+          "errors": [],
+          "is_valid": true,
+          "is_match": false,
+          "all_conditions_match": true,
+          "result": {
+            "url": "https://github.com/warren-bank/Android-Mock-Location/raw/service/v02.03.01/android-studio-project/Mock-my-GPS-UnifiedNlp-Backend/src/main/res/drawable/launcher.png",
+            "status_code": 301,
+            "mime_type": "",
+            "skip_count": 0
+          },
+          "is_redirect": true,
+          "is_passthrough": false,
+          "is_last": true
+        },
+        {
+          "text": "RewriteRule \"^/?repo/icons(?:-\\d+)?/com\\.github\\.warren_bank\\.webmonkey(?:\\.\\d+)?\\.png$\"                                                              \"https://github.com/warren-bank/Android-WebMonkey/raw/v04.02.01/android-studio-project/WebMonkey/src/main/res/drawable/launcher.png\" [L,R=301]",
+          "is_condition": false,
+          "errors": [],
+          "is_valid": true,
+          "is_match": true,
+          "all_conditions_match": true,
+          "result": {
+            "url": "https://github.com/warren-bank/Android-WebMonkey/raw/v04.02.01/android-studio-project/WebMonkey/src/main/res/drawable/launcher.png",
+            "status_code": 301,
+            "mime_type": "",
+            "skip_count": 0,
+            "matches": [
+              "repo/icons/com.github.warren_bank.webmonkey.png"
+            ],
+            "file_path": null
+          },
+          "is_redirect": true,
+          "is_passthrough": false,
+          "is_last": true
+        }
+      ]
+    }
+  ]
+}

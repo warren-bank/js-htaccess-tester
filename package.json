@@ -1,0 +1,28 @@
+{
+  "name": "@warren-bank/htaccess-tester",
+  "description": "Apache .htaccess Tester",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "browser-build/dist"
+  ],
+  "author": {
+    "name":   "Warren R. Bank",
+    "email":  "warren.r.bank@gmail.com",
+    "url":    "https://github.com/warren-bank"
+  },
+  "homepage": "https://github.com/warren-bank/js-htaccess-tester",
+  "repository": {
+    "type":   "git",
+    "url":    "https://github.com/warren-bank/js-htaccess-tester"
+  },
+  "bugs": {
+    "url":    "https://github.com/warren-bank/js-htaccess-tester/issues"
+  },
+  "keywords": [
+    "htaccess",
+    "mod_rewrite"
+  ]
+}

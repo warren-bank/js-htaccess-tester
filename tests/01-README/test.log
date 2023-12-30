@@ -1,0 +1,183 @@
+{
+  "success": true,
+  "result": {
+    "url": "http://icons.example.com/com.example.app/icon.png",
+    "status_code": 301,
+    "mime_type": "",
+    "skip_count": 0,
+    "matches": [
+      "repo/icons/com.example.app.png",
+      "com.example.app"
+    ],
+    "file_path": null
+  },
+  "log": [
+    {
+      "text": "RewriteCond %{HTTP_REFERER} =http://example.com",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "http://example.com",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": "=",
+          "integer-operation": null
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SSL:SSL_CIPHER_USEKEYSIZE} =128",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "128",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": "=",
+          "integer-operation": null
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{HTTP:ACCEPT} =text/plain",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "text/plain",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": "=",
+          "integer-operation": null
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond expr \"%{HTTP:AUTHORIZATION} == 'Basic %{ENV:BASIC_AUTHORIZATION}'\"",
+      "is_condition": true,
+      "errors": [
+        "RewriteCond TestString not supported: expr",
+        "RewriteCond flag not supported: =="
+      ],
+      "is_valid": false,
+      "is_match": false
+    },
+    {
+      "text": "RewriteRule \"^(/?(?:repo|archive))/([^/]+)/[^/]+/icon.*\\.png$\" \"$1/icons/$2.png\" [BCTLS,PT]",
+      "is_condition": false,
+      "errors": [],
+      "is_valid": true,
+      "is_match": true,
+      "all_conditions_match": false,
+      "result": {
+        "url": "http://fdroid.example.com/repo/icons/com.example.app.png",
+        "status_code": null,
+        "mime_type": "",
+        "skip_count": 0,
+        "matches": [
+          "repo/com.example.app/de/icon.png",
+          "repo",
+          "com.example.app"
+        ],
+        "file_path": "/repo/icons/com.example.app.png"
+      },
+      "is_redirect": null,
+      "is_passthrough": true,
+      "is_last": false,
+      "passthrough": [
+        {
+          "text": "RewriteCond %{HTTP_REFERER} =http://example.com",
+          "is_condition": true,
+          "errors": [],
+          "is_valid": true,
+          "result": {
+            "TestString": "http://example.com",
+            "CondPatternFlags": {
+              "negate": false,
+              "lexicographical-operation": "=",
+              "integer-operation": null
+            }
+          },
+          "is_match": true
+        },
+        {
+          "text": "RewriteCond %{SSL:SSL_CIPHER_USEKEYSIZE} =128",
+          "is_condition": true,
+          "errors": [],
+          "is_valid": true,
+          "result": {
+            "TestString": "128",
+            "CondPatternFlags": {
+              "negate": false,
+              "lexicographical-operation": "=",
+              "integer-operation": null
+            }
+          },
+          "is_match": true
+        },
+        {
+          "text": "RewriteCond %{HTTP:ACCEPT} =text/plain",
+          "is_condition": true,
+          "errors": [],
+          "is_valid": true,
+          "result": {
+            "TestString": "text/plain",
+            "CondPatternFlags": {
+              "negate": false,
+              "lexicographical-operation": "=",
+              "integer-operation": null
+            }
+          },
+          "is_match": true
+        },
+        {
+          "text": "RewriteCond expr \"%{HTTP:AUTHORIZATION} == 'Basic %{ENV:BASIC_AUTHORIZATION}'\"",
+          "is_condition": true,
+          "errors": [
+            "RewriteCond TestString not supported: expr",
+            "RewriteCond flag not supported: =="
+          ],
+          "is_valid": false,
+          "is_match": false
+        },
+        {
+          "text": "RewriteRule \"^(/?(?:repo|archive))/([^/]+)/[^/]+/icon.*\\.png$\" \"$1/icons/$2.png\" [BCTLS,PT]",
+          "is_condition": false,
+          "errors": [
+            "RewriteRule Substitution variable not resolved: $1",
+            "RewriteRule Substitution variable not resolved: $2"
+          ],
+          "is_valid": false,
+          "is_match": false
+        },
+        {
+          "text": "RewriteRule \"^/?repo/icons(?:-\\d+)?/(com\\.example\\.app)(?:\\.\\d+)?\\.png$\" \"http://icons.example.com/$1/icon.png\" [L,R=301]",
+          "is_condition": false,
+          "errors": [],
+          "is_valid": true,
+          "is_match": true,
+          "all_conditions_match": true,
+          "result": {
+            "url": "http://icons.example.com/com.example.app/icon.png",
+            "status_code": 301,
+            "mime_type": "",
+            "skip_count": 0,
+            "matches": [
+              "repo/icons/com.example.app.png",
+              "com.example.app"
+            ],
+            "file_path": null
+          },
+          "is_redirect": true,
+          "is_passthrough": false,
+          "is_last": true
+        }
+      ]
+    }
+  ]
+}
