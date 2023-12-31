@@ -1,7 +1,7 @@
 {
   "success": true,
   "result": {
-    "url": "http://test.example.com:80/-?hello=world",
+    "url": "http://test.example.com:80/foo/bar.baz?hello=world",
     "status_code": null,
     "mime_type": "",
     "skip_count": 0,
@@ -9,7 +9,7 @@
       "foo/bar.baz",
       "foo/bar.baz"
     ],
-    "file_path": "/-?hello=world"
+    "file_path": null
   },
   "log": [
     {
@@ -230,7 +230,7 @@
       "is_match": true,
       "all_conditions_match": false,
       "result": {
-        "url": "http://test.example.com:80/-?hello=world",
+        "url": "http://test.example.com:80/foo/bar.baz?hello=world",
         "status_code": null,
         "mime_type": "",
         "skip_count": 0,
@@ -238,7 +238,7 @@
           "foo/bar.baz",
           "foo/bar.baz"
         ],
-        "file_path": "/-?hello=world"
+        "file_path": null
       },
       "is_redirect": null,
       "is_passthrough": false,
