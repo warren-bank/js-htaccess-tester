@@ -95,7 +95,7 @@ __Example:__ [HTML file](./browser-build/tests/01-README/test.html) &rarr; [raw.
   - [api](https://htaccess.madewithlove.com/api)
   - notes:
     * this is a great utility, but all of its work is performed by a closed-source api backend
-    * I designed my [SPA front-end](https://warren-bank.github.io/single-page-apps/htaccess-tester/index.html) user interface to look similar,<br>and all of its work is performed by client-side JS
+    * I designed my [SPA front-end](https://warren-bank.github.io/js-htaccess-tester/index.html) user interface to look similar,<br>and all of its work is performed by client-side JS
 
 #### Legal:
 
