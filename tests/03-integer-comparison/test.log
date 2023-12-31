@@ -1,0 +1,248 @@
+{
+  "success": true,
+  "result": {
+    "url": "http://test.example.com:80/-?hello=world",
+    "status_code": null,
+    "mime_type": "",
+    "skip_count": 0,
+    "matches": [
+      "foo/bar.baz",
+      "foo/bar.baz"
+    ],
+    "file_path": "/-?hello=world"
+  },
+  "log": [
+    {
+      "text": "RewriteCond %{SERVER_PORT} -gt70",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-gt"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -ge70",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-ge"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -ne70",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-ne"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -ge80",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-ge"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -eq80",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-eq"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -le80",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-le"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -ne90",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-ne"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -le90",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-le"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -lt90",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-lt"
+        }
+      },
+      "is_match": true
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -gt90",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-gt"
+        }
+      },
+      "is_match": false
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -ge90",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-ge"
+        }
+      },
+      "is_match": false
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -ne80",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-ne"
+        }
+      },
+      "is_match": false
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -le70",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-le"
+        }
+      },
+      "is_match": false
+    },
+    {
+      "text": "RewriteCond %{SERVER_PORT} -lt70",
+      "is_condition": true,
+      "errors": [],
+      "is_valid": true,
+      "result": {
+        "TestString": "80",
+        "CondPatternFlags": {
+          "negate": false,
+          "lexicographical-operation": null,
+          "integer-operation": "-lt"
+        }
+      },
+      "is_match": false
+    },
+    {
+      "text": "RewriteRule \"^(.*)$\" -",
+      "is_condition": false,
+      "errors": [],
+      "is_valid": true,
+      "is_match": true,
+      "all_conditions_match": false,
+      "result": {
+        "url": "http://test.example.com:80/-?hello=world",
+        "status_code": null,
+        "mime_type": "",
+        "skip_count": 0,
+        "matches": [
+          "foo/bar.baz",
+          "foo/bar.baz"
+        ],
+        "file_path": "/-?hello=world"
+      },
+      "is_redirect": null,
+      "is_passthrough": false,
+      "is_last": false
+    }
+  ]
+}
