@@ -1,7 +1,7 @@
 {
   "name": "@warren-bank/htaccess-tester",
   "description": "Apache .htaccess Tester",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "GPL-2.0",
   "main": "./lib/index.js",
   "files": [
