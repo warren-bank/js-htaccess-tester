@@ -37,12 +37,19 @@
         {
           "text": "RewriteRule \"^(/?(?:repo|archive))/([^/]+)/[^/]+/icon.*\\.png$\" \"$1/icons/$2.png\" [B,PT]",
           "is_condition": false,
-          "errors": [
-            "RewriteRule Substitution variable not resolved: $1",
-            "RewriteRule Substitution variable not resolved: $2"
-          ],
-          "is_valid": false,
-          "is_match": false
+          "errors": [],
+          "is_valid": true,
+          "is_match": false,
+          "all_conditions_match": true,
+          "result": {
+            "url": "$1/icons/$2.png",
+            "status_code": null,
+            "mime_type": "",
+            "skip_count": 0
+          },
+          "is_redirect": null,
+          "is_passthrough": true,
+          "is_last": false
         },
         {
           "text": "RewriteRule \"^/?repo/icons(?:-\\d+)?/com\\.github\\.warren_bank\\.exoplayer_airplay_receiver(?:\\.\\d+)?\\.png$\"                                             \"https://github.com/warren-bank/Android-ExoPlayer-AirPlay-Receiver/raw/v3.4.7/android-studio-project/ExoPlayer-AirPlay-Receiver/src/main/res/drawable/launcher.png\" [L,R=301]",
